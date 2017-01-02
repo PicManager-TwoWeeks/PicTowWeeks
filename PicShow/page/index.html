@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片展示页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/PicCssIndex.css">
+</head>
+<body>
+    <div class="content">
+        <nav  class="head">
+            <a href="#/all">全部</a>
+            <a href="#/person">人物</a>
+            <a href="#/scenery">风光</a>
+            <a href="#/confidential">私房</a>
+            <a href="#/documentary">纪实</a>
+            <a href="#/macro">微距</a>
+            <a href="#/animal">野生动物</a>
+        </nav>
+
+        <div id="pic">
+            <div class="container">
+                <div class="box">
+                    <div class="box-img">
+                        <img src="../testImg/avatar-0.png" alt="pic0">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="../testImg/avatar-0.png" alt="pic0">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="../testImg/avatar-0.png" alt="pic0">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="../testImg/avatar-0.png" alt="pic0">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="../testImg/avatar-0.png" alt="pic0">
+                    </div>
+                </div>
+
+                <div class="clearFooter"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../common/require.js"></script>
+<script>
+    window.onload = function(){
+
+        require.config({
+            baseUrl:"../../PicShow",
+        });
+
+        require(["javascript/index"],function(index){
+
+        });
+    }
+
+
+</script>
+</html>
